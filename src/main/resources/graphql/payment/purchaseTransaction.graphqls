@@ -1,0 +1,12 @@
+type PurchaseTransactionProjection {
+    id: String
+    paymentType: String
+    createdAt: Date
+}
+
+type PurchaseTransactionEntity {
+    id: String
+    paymentType: String
+    amount: Float
+    createdAt: Date
+}

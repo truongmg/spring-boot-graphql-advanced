@@ -1,0 +1,8 @@
+type CustomerEntity {
+    id: String
+    fullName: String
+    phoneNumber: String
+    address: String
+    createdAt: Date
+    purchaseTransactions: [PurchaseTransactionEntity]
+}

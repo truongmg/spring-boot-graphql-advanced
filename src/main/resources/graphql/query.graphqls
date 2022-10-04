@@ -9,25 +9,3 @@ type Query {
 
     findPurchaseTransactionById(id: String!): PurchaseTransactionProjection
 }
-
-type PurchaseTransactionProjection {
-    id: String
-    paymentType: String
-    createdAt: Date
-}
-
-type CustomerEntity {
-    id: String
-    fullName: String
-    phoneNumber: String
-    address: String
-    createdAt: Date
-    purchaseTransactions: [PurchaseTransactionEntity]
-}
-
-type PurchaseTransactionEntity {
-    id: String
-    paymentType: String
-    amount: Float
-    createdAt: Date
-}
